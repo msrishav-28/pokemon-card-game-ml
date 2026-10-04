@@ -1,0 +1,22 @@
+{
+  "experiment_id": "exp_20260904_101822_s4_vs_s3_ablation",
+  "git": "5f463b8",
+  "agent_a": "main.py",
+  "agent_b": "s3",
+  "deck_a": "primary_v1_lucario",
+  "deck_b": "s3",
+  "games": 500,
+  "seed_policy": "paired",
+  "win_rate_a": 0.49,
+  "ci95_low": 0.4464,
+  "ci95_high": 0.5337,
+  "wins": 245,
+  "losses": 252,
+  "draws": 3,
+  "timeouts_a": 0,
+  "invalid_actions_a": 0,
+  "errors_a": 0,
+  "mean_latency_ms": 1.242,
+  "p95_latency_ms": 1.505,
+  "mean_turns": 112.5
+}

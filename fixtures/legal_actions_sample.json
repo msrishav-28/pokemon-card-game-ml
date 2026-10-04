@@ -1,0 +1,44 @@
+{
+  "type": 0,
+  "context": 0,
+  "minCount": 1,
+  "maxCount": 1,
+  "remainDamageCounter": 0,
+  "remainEnergyCost": 0,
+  "option": [
+    {
+      "type": 8,
+      "area": 2,
+      "index": 1,
+      "inPlayArea": 4,
+      "inPlayIndex": 0
+    },
+    {
+      "type": 8,
+      "area": 2,
+      "index": 4,
+      "inPlayArea": 4,
+      "inPlayIndex": 0
+    },
+    {
+      "type": 8,
+      "area": 2,
+      "index": 5,
+      "inPlayArea": 4,
+      "inPlayIndex": 0
+    },
+    {
+      "type": 8,
+      "area": 2,
+      "index": 6,
+      "inPlayArea": 4,
+      "inPlayIndex": 0
+    },
+    {
+      "type": 14
+    }
+  ],
+  "deck": null,
+  "contextCard": null,
+  "effect": null
+}

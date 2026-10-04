@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_replay": "exp_20261003_162915_039009_final-submission-random-200.jsonl",
+  "source_replay_sha256": "71c1ed395a0d8b50eca8093d3b6287d34ea593e55bb3bc00bbccd0c8db8b8535",
+  "game_id": "exp_20261003_162915_039009_final-submission-random-200_g00016",
+  "output": "final-submission-vs-random-win.jsonl",
+  "output_sha256": "5f704eab8a26a570c04f070dc92d64915d3d6f82b5b84febdebaf2b5399052a7",
+  "records": 48,
+  "kinds": {
+    "decision": 47,
+    "game_end": 1
+  },
+  "bytes": 276899,
+  "payloads_copied_verbatim": true
+}

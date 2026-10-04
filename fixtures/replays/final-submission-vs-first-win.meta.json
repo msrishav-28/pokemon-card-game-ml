@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_replay": "exp_20261003_162922_701352_final-submission-first-200.jsonl",
+  "source_replay_sha256": "ce5bbce833905cbabd7aceaf36b89eeb5de490fbe6704a00543c54cea5c4b0fc",
+  "game_id": "exp_20261003_162922_701352_final-submission-first-200_g00114",
+  "output": "final-submission-vs-first-win.jsonl",
+  "output_sha256": "f6d274c97a69b69a8d2ff8cc8dd43de31fd54293cfa1aff54187ca6f4b6c179d",
+  "records": 76,
+  "kinds": {
+    "decision": 75,
+    "game_end": 1
+  },
+  "bytes": 418975,
+  "payloads_copied_verbatim": true
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_replay": "exp_20261003_162928_450627_final-submission-buddy-200.jsonl",
+  "source_replay_sha256": "1e656596c4833b11298264e77269ca3f0948733f14804bdc7e1e9ade96387e03",
+  "game_id": "exp_20261003_162928_450627_final-submission-buddy-200_g00117",
+  "output": "final-submission-vs-buddy-win.jsonl",
+  "output_sha256": "a478f41ce011063ed4b5bab3ba2d5d7e68e47ae96a03d3c4500f5f65abf2efe2",
+  "records": 149,
+  "kinds": {
+    "decision": 148,
+    "game_end": 1
+  },
+  "bytes": 1076300,
+  "payloads_copied_verbatim": true
+}

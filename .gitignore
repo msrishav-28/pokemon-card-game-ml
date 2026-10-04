@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+/.venv/
+/venv/
+/env/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+*.tar.gz
+*.whl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / environment
+.env
+*.env
+
+# Binary pickles / model artifacts
+*.pkl
+*.pth
+*.pt
+!refs/buddy-lucario/deck.pkl
+
+# Large binary bundles — keep refs/ Python files but not the archive
+*.tar.gz
+
+# Native engine binaries (shipped by kaggle-environments, not needed in repo)
+*.so
+*.dll
+*.dylib
+
+# Optional card-ID reference PDFs exceed GitHub's per-file limit. Keep local
+# copies unchanged; the agent and bundle use the official CSV instead.
+/data/official/*.pdf
+
+# Output (replays are large; keep experiments JSON)
+output/replays/
+
+# The buddy native library remains ignored: kaggle-environments is the engine
+# of record and supplies the platform-specific binary.

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_replay": "exp_20260904_162358_604611_planned-random-200.jsonl",
+  "source_replay_sha256": "a9e89be6ab0a918bf4ddc19ac59a90d0f7a79e71a221af3bb1f2852a0317b862",
+  "game_id": "exp_20260904_162358_604611_planned-random-200_g00070",
+  "output": "planned-vs-random-win.jsonl",
+  "output_sha256": "34e8a5acd8e4fc8e242035d8b424122279b3116fac0d187323b6e2926281da57",
+  "records": 51,
+  "kinds": {
+    "decision": 50,
+    "game_end": 1
+  },
+  "bytes": 242230,
+  "payloads_copied_verbatim": true
+}

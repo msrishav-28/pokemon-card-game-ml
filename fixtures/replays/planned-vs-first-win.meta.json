@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_replay": "exp_20260904_162304_151663_planned-first-200.jsonl",
+  "source_replay_sha256": "df7116deeffa52bc93308737506d74b41a33b7702771f56cc9680cf56d6d0fb9",
+  "game_id": "exp_20260904_162304_151663_planned-first-200_g00102",
+  "output": "planned-vs-first-win.jsonl",
+  "output_sha256": "72e13037a39baed8715021e270d7835585748432d2e69b7adc1ac4bc1d35537b",
+  "records": 76,
+  "kinds": {
+    "decision": 75,
+    "game_end": 1
+  },
+  "bytes": 470765,
+  "payloads_copied_verbatim": true
+}

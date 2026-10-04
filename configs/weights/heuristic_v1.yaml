@@ -1,0 +1,42 @@
+closure:
+  board: 0.4
+  endgame: 2.5
+  prize_race: 1.8
+  resources: 0.6
+  risk: 0.8
+  tempo: 0.7
+development:
+  board: 1.6
+  endgame: 0.2
+  prize_race: 0.6
+  resources: 1.2
+  risk: 1.0
+  tempo: 1.4
+opening:
+  board: 2.0
+  endgame: 0.1
+  prize_race: 0.3
+  resources: 1.5
+  risk: 1.2
+  tempo: 1.5
+pressure:
+  board: 0.8
+  endgame: 0.5
+  prize_race: 1.4
+  resources: 0.9
+  risk: 1.0
+  tempo: 1.2
+prize_conversion:
+  board: 0.7
+  endgame: 1.2
+  prize_race: 1.6
+  resources: 0.8
+  risk: 1.1
+  tempo: 1.0
+stabilization:
+  board: 1.4
+  endgame: 0.3
+  prize_race: 0.8
+  resources: 1.4
+  risk: 1.5
+  tempo: 1.3

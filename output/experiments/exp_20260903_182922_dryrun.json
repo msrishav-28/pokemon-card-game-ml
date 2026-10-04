@@ -1,0 +1,22 @@
+{
+  "experiment_id": "exp_20260903_182922_dryrun",
+  "git": "5f463b8",
+  "agent_a": "main.py",
+  "agent_b": "random",
+  "deck_a": "primary_v1_lucario",
+  "deck_b": "random",
+  "games": 10,
+  "seed_policy": "paired",
+  "win_rate_a": 0.5,
+  "ci95_low": 0.2366,
+  "ci95_high": 0.7634,
+  "wins": 5,
+  "losses": 5,
+  "draws": 0,
+  "timeouts_a": 0,
+  "invalid_actions_a": 0,
+  "errors_a": 0,
+  "mean_latency_ms": 0.563,
+  "p95_latency_ms": 0.706,
+  "mean_turns": 66.2
+}

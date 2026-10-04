@@ -1,0 +1,65 @@
+{
+  "generatedAtUtc": "2026-09-04T10:45:43.453709+00:00",
+  "generatedBy": "scripts/inspect_obs.py",
+  "source": "make('cabt').run(['random', 'first'])",
+  "pythonVersion": "3.12.14",
+  "kaggleEnvironmentsVersion": "1.32.7",
+  "cabtSpecificationVersion": "1.0.0",
+  "randomAgentSeed": 20260904,
+  "episodeResults": [
+    {
+      "game": 0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "steps": 45
+    }
+  ],
+  "fixtures": {
+    "deck_obs_sample.json": {
+      "sha256CanonicalJson": "f735f8b0a43a60d311a9f3ebe56852d34e1f3f74bf11772b06531d6c2b6589d9",
+      "capture": "deck",
+      "game": 0,
+      "step": 0,
+      "player": 0,
+      "status": "ACTIVE"
+    },
+    "obs_sample.json": {
+      "sha256CanonicalJson": "9f2de54ff0377735b1198d48965529248cba8385090891f1f33502738965a98a",
+      "capture": "main",
+      "game": 0,
+      "step": 5,
+      "player": 0,
+      "status": "ACTIVE"
+    },
+    "legal_actions_sample.json": {
+      "sha256CanonicalJson": "7daa843cdd5f77da9f7c429027179f32dfa0ee698d964f4e44e78914c4234910",
+      "capture": "main",
+      "game": 0,
+      "step": 5,
+      "player": 0,
+      "status": "ACTIVE"
+    },
+    "multi_select_obs_sample.json": {
+      "sha256CanonicalJson": "003f9c07fa53268ccf5e28c111335df4e9b0e1991862d3a95ca3e4237b22f2f0",
+      "capture": "multi",
+      "game": 0,
+      "step": 8,
+      "player": 1,
+      "status": "ACTIVE"
+    },
+    "energized_obs_sample.json": {
+      "sha256CanonicalJson": "4f6fd7649cdead2a29285e27f1a375628a293e2d20275836418d8e78c8897621",
+      "capture": "energized",
+      "game": 0,
+      "step": 6,
+      "player": 0,
+      "status": "ACTIVE"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "experiment_id": "exp_20260903_184505_s3_vs_baseline_200",
+  "git": "5f463b8",
+  "agent_a": "main.py",
+  "agent_b": "baseline",
+  "deck_a": "primary_v1_lucario",
+  "deck_b": "baseline",
+  "games": 200,
+  "seed_policy": "paired",
+  "win_rate_a": 0.68,
+  "ci95_low": 0.6125,
+  "ci95_high": 0.7407,
+  "wins": 136,
+  "losses": 64,
+  "draws": 0,
+  "timeouts_a": 0,
+  "invalid_actions_a": 0,
+  "errors_a": 0,
+  "mean_latency_ms": 1.137,
+  "p95_latency_ms": 2.228,
+  "mean_turns": 89.2
+}

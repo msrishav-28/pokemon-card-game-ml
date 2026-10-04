@@ -1,0 +1,22 @@
+{
+  "experiment_id": "exp_20260903_183003_s1_gate_100",
+  "git": "5f463b8",
+  "agent_a": "main.py",
+  "agent_b": "random",
+  "deck_a": "primary_v1_lucario",
+  "deck_b": "random",
+  "games": 100,
+  "seed_policy": "paired",
+  "win_rate_a": 0.69,
+  "ci95_low": 0.5937,
+  "ci95_high": 0.7722,
+  "wins": 69,
+  "losses": 31,
+  "draws": 0,
+  "timeouts_a": 0,
+  "invalid_actions_a": 0,
+  "errors_a": 0,
+  "mean_latency_ms": 0.722,
+  "p95_latency_ms": 0.763,
+  "mean_turns": 83.3
+}

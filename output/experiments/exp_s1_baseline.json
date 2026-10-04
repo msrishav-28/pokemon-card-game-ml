@@ -1,0 +1,20 @@
+{
+  "experiment_id": "exp_s1_baseline",
+  "git": "uncommitted",
+  "agent_a": "baseline_v1",
+  "agent_b": "random",
+  "deck_a": "primary_v1_lucario",
+  "deck_b": "random",
+  "games": 100,
+  "seed_policy": "paired",
+  "win_rate_a": 0.77,
+  "ci95_low": 0.676,
+  "ci95_high": 0.844,
+  "timeouts_a": 0,
+  "invalid_actions_a": 0,
+  "errors_a": 0,
+  "mean_latency_ms": null,
+  "p95_latency_ms": null,
+  "mean_turns": null,
+  "_notes": "ci95 computed via Wilson interval for 77/100. Latency and mean_turns not instrumented in S1 batch run — must be measured before S3 gate claim."
+}

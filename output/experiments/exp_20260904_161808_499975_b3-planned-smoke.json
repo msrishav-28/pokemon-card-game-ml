@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp_20260904_161808_499975_b3-planned-smoke",
+  "started_at": "2026-09-04T16:18:08.597905+00:00",
+  "finished_at": "2026-09-04T16:18:10.207547+00:00",
+  "wall_time_s": 1.611904,
+  "engine": {
+    "name": "cabt",
+    "kaggle_environments": "1.32.7",
+    "seed_control": false
+  },
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14"
+  },
+  "git_hash": "5f463b8d2f38162d63d46bb97df6bece2348ca47",
+  "git_dirty": true,
+  "agent": {
+    "name": "submission",
+    "source": "C:\\Users\\Vignesh\\Downloads\\pokemon\\scripts\\eval_agents\\planned.py",
+    "deck": {
+      "name": "buddy-lucario-locked",
+      "cards": 60,
+      "sha256": "23ebf274a3d25d4dbc1ee3886e4c0e87a66c4e780c6e499e61be1b3ccd1f7c9d"
+    }
+  },
+  "opponent": {
+    "name": "first",
+    "source": "kaggle_environments.envs.cabt.cabt.first_agent",
+    "deck": {
+      "name": "cabt-builtin-deck",
+      "cards": 60,
+      "sha256": "dc24c4da860228fe938eaa078983353ce69476a2270d60a412645cc50eb7ae05"
+    }
+  },
+  "deck_name": "buddy-lucario-locked",
+  "opponent_name": "first",
+  "games": 4,
+  "seed_policy": "seat-paired",
+  "outcome_policy": "Agent INVALID, TIMEOUT, or ERROR is counted as a loss; the same opponent status is counted as an agent win. Clean games use cabt reward.",
+  "pairing": {
+    "mode": "seat-paired",
+    "full_pairs": 2,
+    "unpaired_games": 0,
+    "engine_seed_control": false,
+    "engine_seed": null,
+    "python_seed_base": 20260904,
+    "note": "Seats are swapped within each pair and Python agent RNG is reset; native cabt chance is uncontrolled and is not paired."
+  },
+  "results": {
+    "attempted": 4,
+    "completed": 4,
+    "wins": 3,
+    "losses": 1,
+    "draws": 0,
+    "win_rate": 0.75,
+    "win_rate_wilson95": [
+      0.300642,
+      0.954413
+    ],
+    "invalid": 0,
+    "timeout": 0,
+    "error": 0,
+    "runner_error": 0,
+    "mean_leftover_overage_s": 599.960952,
+    "min_leftover_overage_s": 599.922859
+  },
+  "by_agent_seat": {
+    "0": {
+      "attempted": 2,
+      "completed": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
+      "win_rate": 0.5,
+      "win_rate_wilson95": [
+        0.094531,
+        0.905469
+      ],
+      "invalid": 0,
+      "timeout": 0,
+      "error": 0,
+      "runner_error": 0,
+      "mean_leftover_overage_s": 599.94362,
+      "min_leftover_overage_s": 599.922859
+    },
+    "1": {
+      "attempted": 2,
+      "completed": 2,
+      "wins": 2,
+      "losses": 0,
+      "draws": 0,
+      "win_rate": 1.0,
+      "win_rate_wilson95": [
+        0.34238,
+        1.0
+      ],
+      "invalid": 0,
+      "timeout": 0,
+      "error": 0,
+      "runner_error": 0,
+      "mean_leftover_overage_s": 599.978284,
+      "min_leftover_overage_s": 599.968498
+    }
+  },
+  "opponent_failures": {
+    "invalid": 0,
+    "timeout": 0,
+    "error": 0
+  },
+  "agent_timing": {
+    "decisions": 172,
+    "mean_ms": 0.178032,
+    "p95_ms": 0.342895,
+    "max_ms": 1.2304,
+    "contract_failures": 0,
+    "exceptions": 0
+  },
+  "opponent_timing": {
+    "decisions": 74,
+    "mean_ms": 0.003273,
+    "p95_ms": 0.005105,
+    "max_ms": 0.0059,
+    "contract_failures": 0,
+    "exceptions": 0
+  },
+  "mean_engine_steps": 61.5,
+  "replay_jsonl": "C:\\Users\\Vignesh\\Downloads\\pokemon\\output\\replays\\exp_20260904_161808_499975_b3-planned-smoke.jsonl",
+  "game_records": [
+    {
+      "game_index": 0,
+      "game_id": "exp_20260904_161808_499975_b3-planned-smoke_g00000",
+      "pair_id": 0,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260904,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.964381,
+      "opponent_remaining_overage_s": 599.998842,
+      "engine_steps": 37,
+      "agent_decisions": 33,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.272528,
+      "runner_error": null
+    },
+    {
+      "game_index": 1,
+      "game_id": "exp_20260904_161808_499975_b3-planned-smoke_g00001",
+      "pair_id": 0,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260904,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9880699999995,
+      "opponent_remaining_overage_s": 599.996222,
+      "engine_steps": 33,
+      "agent_decisions": 23,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.172954,
+      "runner_error": null
+    },
+    {
+      "game_index": 2,
+      "game_id": "exp_20260904_161808_499975_b3-planned-smoke_g00002",
+      "pair_id": 1,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260905,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.922859,
+      "opponent_remaining_overage_s": 599.9764779999998,
+      "engine_steps": 113,
+      "agent_decisions": 72,
+      "opponent_decisions": 41,
+      "wall_time_s": 0.792008,
+      "runner_error": null
+    },
+    {
+      "game_index": 3,
+      "game_id": "exp_20260904_161808_499975_b3-planned-smoke_g00003",
+      "pair_id": 1,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260905,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.968498,
+      "opponent_remaining_overage_s": 599.993929,
+      "engine_steps": 63,
+      "agent_decisions": 44,
+      "opponent_decisions": 19,
+      "wall_time_s": 0.372659,
+      "runner_error": null
+    }
+  ]
+}

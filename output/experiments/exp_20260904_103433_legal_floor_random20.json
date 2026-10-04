@@ -1,0 +1,22 @@
+{
+  "experiment_id": "exp_20260904_103433_legal_floor_random20",
+  "git": "5f463b8",
+  "agent_a": "main.py",
+  "agent_b": "random",
+  "deck_a": "primary_v1_lucario",
+  "deck_b": "random",
+  "games": 20,
+  "seed_policy": "paired",
+  "win_rate_a": 0.55,
+  "ci95_low": 0.3421,
+  "ci95_high": 0.7418,
+  "wins": 11,
+  "losses": 9,
+  "draws": 0,
+  "timeouts_a": 0,
+  "invalid_actions_a": 0,
+  "errors_a": 0,
+  "mean_latency_ms": 0.525,
+  "p95_latency_ms": 0.798,
+  "mean_turns": 90.3
+}

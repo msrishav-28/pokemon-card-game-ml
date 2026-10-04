@@ -1,0 +1,5531 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp_20260904_162358_604611_planned-random-200",
+  "started_at": "2026-09-04T16:23:59.113984+00:00",
+  "finished_at": "2026-09-04T16:26:19.336417+00:00",
+  "wall_time_s": 140.222552,
+  "engine": {
+    "name": "cabt",
+    "kaggle_environments": "1.32.7",
+    "seed_control": false
+  },
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14"
+  },
+  "git_hash": "5f463b8d2f38162d63d46bb97df6bece2348ca47",
+  "git_dirty": true,
+  "agent": {
+    "name": "submission",
+    "source": "C:\\Users\\Vignesh\\Downloads\\pokemon\\scripts\\eval_agents\\planned.py",
+    "deck": {
+      "name": "buddy-lucario-locked",
+      "cards": 60,
+      "sha256": "23ebf274a3d25d4dbc1ee3886e4c0e87a66c4e780c6e499e61be1b3ccd1f7c9d"
+    }
+  },
+  "opponent": {
+    "name": "random",
+    "source": "kaggle_environments.envs.cabt.cabt.random_agent",
+    "deck": {
+      "name": "cabt-builtin-deck",
+      "cards": 60,
+      "sha256": "dc24c4da860228fe938eaa078983353ce69476a2270d60a412645cc50eb7ae05"
+    }
+  },
+  "deck_name": "buddy-lucario-locked",
+  "opponent_name": "random",
+  "games": 200,
+  "seed_policy": "seat-paired",
+  "outcome_policy": "Agent INVALID, TIMEOUT, or ERROR is counted as a loss; the same opponent status is counted as an agent win. Clean games use cabt reward.",
+  "pairing": {
+    "mode": "seat-paired",
+    "full_pairs": 100,
+    "unpaired_games": 0,
+    "engine_seed_control": false,
+    "engine_seed": null,
+    "python_seed_base": 20260904,
+    "note": "Seats are swapped within each pair and Python agent RNG is reset; native cabt chance is uncontrolled and is not paired."
+  },
+  "results": {
+    "attempted": 200,
+    "completed": 200,
+    "wins": 194,
+    "losses": 6,
+    "draws": 0,
+    "win_rate": 0.97,
+    "win_rate_wilson95": [
+      0.936106,
+      0.98618
+    ],
+    "invalid": 0,
+    "timeout": 0,
+    "error": 0,
+    "runner_error": 0,
+    "mean_leftover_overage_s": 599.928791,
+    "min_leftover_overage_s": 599.761758
+  },
+  "by_agent_seat": {
+    "0": {
+      "attempted": 100,
+      "completed": 100,
+      "wins": 98,
+      "losses": 2,
+      "draws": 0,
+      "win_rate": 0.98,
+      "win_rate_wilson95": [
+        0.929988,
+        0.994498
+      ],
+      "invalid": 0,
+      "timeout": 0,
+      "error": 0,
+      "runner_error": 0,
+      "mean_leftover_overage_s": 599.928704,
+      "min_leftover_overage_s": 599.761758
+    },
+    "1": {
+      "attempted": 100,
+      "completed": 100,
+      "wins": 96,
+      "losses": 4,
+      "draws": 0,
+      "win_rate": 0.96,
+      "win_rate_wilson95": [
+        0.901629,
+        0.984337
+      ],
+      "invalid": 0,
+      "timeout": 0,
+      "error": 0,
+      "runner_error": 0,
+      "mean_leftover_overage_s": 599.928878,
+      "min_leftover_overage_s": 599.793093
+    }
+  },
+  "opponent_failures": {
+    "invalid": 0,
+    "timeout": 0,
+    "error": 0
+  },
+  "agent_timing": {
+    "decisions": 9248,
+    "mean_ms": 0.344218,
+    "p95_ms": 0.558465,
+    "max_ms": 83.0438,
+    "contract_failures": 0,
+    "exceptions": 0
+  },
+  "opponent_timing": {
+    "decisions": 2372,
+    "mean_ms": 0.023364,
+    "p95_ms": 0.030145,
+    "max_ms": 2.4521,
+    "contract_failures": 0,
+    "exceptions": 0
+  },
+  "mean_engine_steps": 58.1,
+  "replay_jsonl": "C:\\Users\\Vignesh\\Downloads\\pokemon\\output\\replays\\exp_20260904_162358_604611_planned-random-200.jsonl",
+  "game_records": [
+    {
+      "game_index": 0,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00000",
+      "pair_id": 0,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260904,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.7752600000001,
+      "opponent_remaining_overage_s": 599.985974,
+      "engine_steps": 90,
+      "agent_decisions": 71,
+      "opponent_decisions": 19,
+      "wall_time_s": 2.325391,
+      "runner_error": null
+    },
+    {
+      "game_index": 1,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00001",
+      "pair_id": 0,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260904,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.911732,
+      "opponent_remaining_overage_s": 599.9897319999999,
+      "engine_steps": 20,
+      "agent_decisions": 13,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.739645,
+      "runner_error": null
+    },
+    {
+      "game_index": 2,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00002",
+      "pair_id": 1,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260905,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.7617580000001,
+      "opponent_remaining_overage_s": 599.982277,
+      "engine_steps": 90,
+      "agent_decisions": 71,
+      "opponent_decisions": 19,
+      "wall_time_s": 2.59992,
+      "runner_error": null
+    },
+    {
+      "game_index": 3,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00003",
+      "pair_id": 1,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260905,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.7930929999999,
+      "opponent_remaining_overage_s": 599.8067080000003,
+      "engine_steps": 83,
+      "agent_decisions": 55,
+      "opponent_decisions": 28,
+      "wall_time_s": 3.506567,
+      "runner_error": null
+    },
+    {
+      "game_index": 4,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00004",
+      "pair_id": 2,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260906,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9131259999998,
+      "opponent_remaining_overage_s": 599.9948870000001,
+      "engine_steps": 60,
+      "agent_decisions": 52,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.738985,
+      "runner_error": null
+    },
+    {
+      "game_index": 5,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00005",
+      "pair_id": 2,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260906,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9361810000001,
+      "opponent_remaining_overage_s": 599.998071,
+      "engine_steps": 32,
+      "agent_decisions": 28,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.720958,
+      "runner_error": null
+    },
+    {
+      "game_index": 6,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00006",
+      "pair_id": 3,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260907,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9088749999999,
+      "opponent_remaining_overage_s": 599.9976829999999,
+      "engine_steps": 45,
+      "agent_decisions": 41,
+      "opponent_decisions": 4,
+      "wall_time_s": 1.234452,
+      "runner_error": null
+    },
+    {
+      "game_index": 7,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00007",
+      "pair_id": 3,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260907,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9242090000002,
+      "opponent_remaining_overage_s": 599.991404,
+      "engine_steps": 43,
+      "agent_decisions": 36,
+      "opponent_decisions": 7,
+      "wall_time_s": 1.694687,
+      "runner_error": null
+    },
+    {
+      "game_index": 8,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00008",
+      "pair_id": 4,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260908,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8770220000001,
+      "opponent_remaining_overage_s": 599.996153,
+      "engine_steps": 31,
+      "agent_decisions": 25,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.731099,
+      "runner_error": null
+    },
+    {
+      "game_index": 9,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00009",
+      "pair_id": 4,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260908,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8468839999999,
+      "opponent_remaining_overage_s": 599.9648469999998,
+      "engine_steps": 108,
+      "agent_decisions": 71,
+      "opponent_decisions": 37,
+      "wall_time_s": 1.424619,
+      "runner_error": null
+    },
+    {
+      "game_index": 10,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00010",
+      "pair_id": 5,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260909,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9298950000001,
+      "opponent_remaining_overage_s": 599.9969529999998,
+      "engine_steps": 43,
+      "agent_decisions": 38,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.483047,
+      "runner_error": null
+    },
+    {
+      "game_index": 11,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00011",
+      "pair_id": 5,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260909,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9521770000002,
+      "opponent_remaining_overage_s": 599.997498,
+      "engine_steps": 28,
+      "agent_decisions": 22,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.307782,
+      "runner_error": null
+    },
+    {
+      "game_index": 12,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00012",
+      "pair_id": 6,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260910,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9312740000003,
+      "opponent_remaining_overage_s": 599.992526,
+      "engine_steps": 70,
+      "agent_decisions": 59,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.708144,
+      "runner_error": null
+    },
+    {
+      "game_index": 13,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00013",
+      "pair_id": 6,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260910,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.965238,
+      "opponent_remaining_overage_s": 599.9958669999999,
+      "engine_steps": 41,
+      "agent_decisions": 33,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.405253,
+      "runner_error": null
+    },
+    {
+      "game_index": 14,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00014",
+      "pair_id": 7,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260911,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8997289999998,
+      "opponent_remaining_overage_s": 599.954865,
+      "engine_steps": 72,
+      "agent_decisions": 54,
+      "opponent_decisions": 18,
+      "wall_time_s": 0.815062,
+      "runner_error": null
+    },
+    {
+      "game_index": 15,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00015",
+      "pair_id": 7,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260911,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9470649999997,
+      "opponent_remaining_overage_s": 599.9958250000001,
+      "engine_steps": 49,
+      "agent_decisions": 43,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.532501,
+      "runner_error": null
+    },
+    {
+      "game_index": 16,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00016",
+      "pair_id": 8,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260912,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9224880000003,
+      "opponent_remaining_overage_s": 599.9930909999999,
+      "engine_steps": 72,
+      "agent_decisions": 61,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.749563,
+      "runner_error": null
+    },
+    {
+      "game_index": 17,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00017",
+      "pair_id": 8,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260912,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9685110000001,
+      "opponent_remaining_overage_s": 599.9960950000001,
+      "engine_steps": 40,
+      "agent_decisions": 33,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.384334,
+      "runner_error": null
+    },
+    {
+      "game_index": 18,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00018",
+      "pair_id": 9,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260913,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9178069999999,
+      "opponent_remaining_overage_s": 599.9763099999999,
+      "engine_steps": 56,
+      "agent_decisions": 47,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.627804,
+      "runner_error": null
+    },
+    {
+      "game_index": 19,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00019",
+      "pair_id": 9,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260913,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9836740000001,
+      "opponent_remaining_overage_s": 599.9923010000001,
+      "engine_steps": 30,
+      "agent_decisions": 17,
+      "opponent_decisions": 13,
+      "wall_time_s": 0.28699,
+      "runner_error": null
+    },
+    {
+      "game_index": 20,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00020",
+      "pair_id": 10,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260914,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9701440000002,
+      "opponent_remaining_overage_s": 599.9962480000002,
+      "engine_steps": 36,
+      "agent_decisions": 31,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.348716,
+      "runner_error": null
+    },
+    {
+      "game_index": 21,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00021",
+      "pair_id": 10,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260914,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9026960000004,
+      "opponent_remaining_overage_s": 599.9443130000002,
+      "engine_steps": 108,
+      "agent_decisions": 74,
+      "opponent_decisions": 34,
+      "wall_time_s": 1.179346,
+      "runner_error": null
+    },
+    {
+      "game_index": 22,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00022",
+      "pair_id": 11,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260915,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8983020000001,
+      "opponent_remaining_overage_s": 599.9937840000001,
+      "engine_steps": 44,
+      "agent_decisions": 38,
+      "opponent_decisions": 6,
+      "wall_time_s": 1.145585,
+      "runner_error": null
+    },
+    {
+      "game_index": 23,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00023",
+      "pair_id": 11,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260915,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8357319999998,
+      "opponent_remaining_overage_s": 599.9828,
+      "engine_steps": 66,
+      "agent_decisions": 54,
+      "opponent_decisions": 12,
+      "wall_time_s": 1.419725,
+      "runner_error": null
+    },
+    {
+      "game_index": 24,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00024",
+      "pair_id": 12,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260916,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9064290000005,
+      "opponent_remaining_overage_s": 599.9849449999999,
+      "engine_steps": 58,
+      "agent_decisions": 36,
+      "opponent_decisions": 22,
+      "wall_time_s": 0.859558,
+      "runner_error": null
+    },
+    {
+      "game_index": 25,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00025",
+      "pair_id": 12,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260916,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9573189999996,
+      "opponent_remaining_overage_s": 599.992793,
+      "engine_steps": 53,
+      "agent_decisions": 41,
+      "opponent_decisions": 12,
+      "wall_time_s": 0.550846,
+      "runner_error": null
+    },
+    {
+      "game_index": 26,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00026",
+      "pair_id": 13,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260917,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.965424,
+      "opponent_remaining_overage_s": 599.998139,
+      "engine_steps": 38,
+      "agent_decisions": 34,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.367052,
+      "runner_error": null
+    },
+    {
+      "game_index": 27,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00027",
+      "pair_id": 13,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260917,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8640680000002,
+      "opponent_remaining_overage_s": 599.973868,
+      "engine_steps": 109,
+      "agent_decisions": 76,
+      "opponent_decisions": 33,
+      "wall_time_s": 1.408417,
+      "runner_error": null
+    },
+    {
+      "game_index": 28,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00028",
+      "pair_id": 14,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260918,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.963786,
+      "opponent_remaining_overage_s": 599.993053,
+      "engine_steps": 39,
+      "agent_decisions": 34,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.636195,
+      "runner_error": null
+    },
+    {
+      "game_index": 29,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00029",
+      "pair_id": 14,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260918,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.90299,
+      "opponent_remaining_overage_s": 599.9945769999998,
+      "engine_steps": 59,
+      "agent_decisions": 51,
+      "opponent_decisions": 8,
+      "wall_time_s": 1.021393,
+      "runner_error": null
+    },
+    {
+      "game_index": 30,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00030",
+      "pair_id": 15,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260919,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.977661,
+      "opponent_remaining_overage_s": 599.997484,
+      "engine_steps": 29,
+      "agent_decisions": 24,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.287854,
+      "runner_error": null
+    },
+    {
+      "game_index": 31,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00031",
+      "pair_id": 15,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260919,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9747420000001,
+      "opponent_remaining_overage_s": 599.9965510000001,
+      "engine_steps": 32,
+      "agent_decisions": 25,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.329744,
+      "runner_error": null
+    },
+    {
+      "game_index": 32,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00032",
+      "pair_id": 16,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260920,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9626629999998,
+      "opponent_remaining_overage_s": 599.997752,
+      "engine_steps": 39,
+      "agent_decisions": 35,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.394932,
+      "runner_error": null
+    },
+    {
+      "game_index": 33,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00033",
+      "pair_id": 16,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260920,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.963635,
+      "opponent_remaining_overage_s": 599.997548,
+      "engine_steps": 37,
+      "agent_decisions": 33,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.414944,
+      "runner_error": null
+    },
+    {
+      "game_index": 34,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00034",
+      "pair_id": 17,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260921,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9422760000004,
+      "opponent_remaining_overage_s": 599.9884820000002,
+      "engine_steps": 65,
+      "agent_decisions": 49,
+      "opponent_decisions": 16,
+      "wall_time_s": 0.650244,
+      "runner_error": null
+    },
+    {
+      "game_index": 35,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00035",
+      "pair_id": 17,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260921,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9087790000001,
+      "opponent_remaining_overage_s": 599.986269,
+      "engine_steps": 95,
+      "agent_decisions": 74,
+      "opponent_decisions": 21,
+      "wall_time_s": 1.005512,
+      "runner_error": null
+    },
+    {
+      "game_index": 36,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00036",
+      "pair_id": 18,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260922,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.929175,
+      "opponent_remaining_overage_s": 599.99232,
+      "engine_steps": 68,
+      "agent_decisions": 57,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.708522,
+      "runner_error": null
+    },
+    {
+      "game_index": 37,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00037",
+      "pair_id": 18,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260922,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9574030000002,
+      "opponent_remaining_overage_s": 599.9964659999999,
+      "engine_steps": 41,
+      "agent_decisions": 36,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.451658,
+      "runner_error": null
+    },
+    {
+      "game_index": 38,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00038",
+      "pair_id": 19,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260923,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9462689999999,
+      "opponent_remaining_overage_s": 599.9971810000001,
+      "engine_steps": 32,
+      "agent_decisions": 27,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.354279,
+      "runner_error": null
+    },
+    {
+      "game_index": 39,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00039",
+      "pair_id": 19,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260923,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.873551,
+      "opponent_remaining_overage_s": 599.9818969999999,
+      "engine_steps": 102,
+      "agent_decisions": 77,
+      "opponent_decisions": 25,
+      "wall_time_s": 1.092776,
+      "runner_error": null
+    },
+    {
+      "game_index": 40,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00040",
+      "pair_id": 20,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260924,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9761250000001,
+      "opponent_remaining_overage_s": 599.9959419999999,
+      "engine_steps": 34,
+      "agent_decisions": 26,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.326366,
+      "runner_error": null
+    },
+    {
+      "game_index": 41,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00041",
+      "pair_id": 20,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260924,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.908994,
+      "opponent_remaining_overage_s": 599.994553,
+      "engine_steps": 63,
+      "agent_decisions": 54,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.647262,
+      "runner_error": null
+    },
+    {
+      "game_index": 42,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00042",
+      "pair_id": 21,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260925,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9411040000001,
+      "opponent_remaining_overage_s": 599.998258,
+      "engine_steps": 29,
+      "agent_decisions": 25,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.323316,
+      "runner_error": null
+    },
+    {
+      "game_index": 43,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00043",
+      "pair_id": 21,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260925,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9395769999996,
+      "opponent_remaining_overage_s": 599.994978,
+      "engine_steps": 59,
+      "agent_decisions": 50,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.602871,
+      "runner_error": null
+    },
+    {
+      "game_index": 44,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00044",
+      "pair_id": 22,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260926,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.979058,
+      "opponent_remaining_overage_s": 599.997558,
+      "engine_steps": 27,
+      "agent_decisions": 22,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.269529,
+      "runner_error": null
+    },
+    {
+      "game_index": 45,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00045",
+      "pair_id": 22,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260926,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9020430000002,
+      "opponent_remaining_overage_s": 599.9862639999999,
+      "engine_steps": 79,
+      "agent_decisions": 61,
+      "opponent_decisions": 18,
+      "wall_time_s": 0.81099,
+      "runner_error": null
+    },
+    {
+      "game_index": 46,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00046",
+      "pair_id": 23,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260927,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9548880000002,
+      "opponent_remaining_overage_s": 599.9935920000001,
+      "engine_steps": 52,
+      "agent_decisions": 42,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.558853,
+      "runner_error": null
+    },
+    {
+      "game_index": 47,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00047",
+      "pair_id": 23,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260927,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9106220000004,
+      "opponent_remaining_overage_s": 599.995017,
+      "engine_steps": 55,
+      "agent_decisions": 46,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.602909,
+      "runner_error": null
+    },
+    {
+      "game_index": 48,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00048",
+      "pair_id": 24,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260928,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9699159999998,
+      "opponent_remaining_overage_s": 599.996309,
+      "engine_steps": 38,
+      "agent_decisions": 31,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.35356,
+      "runner_error": null
+    },
+    {
+      "game_index": 49,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00049",
+      "pair_id": 24,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260928,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9680969999997,
+      "opponent_remaining_overage_s": 599.997115,
+      "engine_steps": 37,
+      "agent_decisions": 31,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.352055,
+      "runner_error": null
+    },
+    {
+      "game_index": 50,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00050",
+      "pair_id": 25,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260929,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.909734,
+      "opponent_remaining_overage_s": 599.9927629999999,
+      "engine_steps": 60,
+      "agent_decisions": 48,
+      "opponent_decisions": 12,
+      "wall_time_s": 0.614812,
+      "runner_error": null
+    },
+    {
+      "game_index": 51,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00051",
+      "pair_id": 25,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260929,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9608830000002,
+      "opponent_remaining_overage_s": 599.9911389999999,
+      "engine_steps": 48,
+      "agent_decisions": 35,
+      "opponent_decisions": 13,
+      "wall_time_s": 0.517553,
+      "runner_error": null
+    },
+    {
+      "game_index": 52,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00052",
+      "pair_id": 26,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260930,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9676029999995,
+      "opponent_remaining_overage_s": 599.996826,
+      "engine_steps": 36,
+      "agent_decisions": 31,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.379485,
+      "runner_error": null
+    },
+    {
+      "game_index": 53,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00053",
+      "pair_id": 26,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260930,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9435,
+      "opponent_remaining_overage_s": 599.9976379999999,
+      "engine_steps": 33,
+      "agent_decisions": 28,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.346133,
+      "runner_error": null
+    },
+    {
+      "game_index": 54,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00054",
+      "pair_id": 27,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260931,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.914293,
+      "opponent_remaining_overage_s": 599.9840409999999,
+      "engine_steps": 92,
+      "agent_decisions": 71,
+      "opponent_decisions": 21,
+      "wall_time_s": 0.926726,
+      "runner_error": null
+    },
+    {
+      "game_index": 55,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00055",
+      "pair_id": 27,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260931,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8770770000002,
+      "opponent_remaining_overage_s": 599.9667660000001,
+      "engine_steps": 112,
+      "agent_decisions": 71,
+      "opponent_decisions": 41,
+      "wall_time_s": 1.287726,
+      "runner_error": null
+    },
+    {
+      "game_index": 56,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00056",
+      "pair_id": 28,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260932,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9274159999995,
+      "opponent_remaining_overage_s": 599.9975059999999,
+      "engine_steps": 47,
+      "agent_decisions": 43,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.536193,
+      "runner_error": null
+    },
+    {
+      "game_index": 57,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00057",
+      "pair_id": 28,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260932,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9125440000003,
+      "opponent_remaining_overage_s": 599.9850950000002,
+      "engine_steps": 92,
+      "agent_decisions": 71,
+      "opponent_decisions": 21,
+      "wall_time_s": 0.975848,
+      "runner_error": null
+    },
+    {
+      "game_index": 58,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00058",
+      "pair_id": 29,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260933,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9140710000005,
+      "opponent_remaining_overage_s": 599.9956129999999,
+      "engine_steps": 54,
+      "agent_decisions": 47,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.612294,
+      "runner_error": null
+    },
+    {
+      "game_index": 59,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00059",
+      "pair_id": 29,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260933,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9540450000001,
+      "opponent_remaining_overage_s": 599.995814,
+      "engine_steps": 46,
+      "agent_decisions": 39,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.458506,
+      "runner_error": null
+    },
+    {
+      "game_index": 60,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00060",
+      "pair_id": 30,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260934,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8603420000001,
+      "opponent_remaining_overage_s": 599.9919140000002,
+      "engine_steps": 81,
+      "agent_decisions": 69,
+      "opponent_decisions": 12,
+      "wall_time_s": 0.878108,
+      "runner_error": null
+    },
+    {
+      "game_index": 61,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00061",
+      "pair_id": 30,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260934,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.969235,
+      "opponent_remaining_overage_s": 599.996011,
+      "engine_steps": 38,
+      "agent_decisions": 30,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.36682,
+      "runner_error": null
+    },
+    {
+      "game_index": 62,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00062",
+      "pair_id": 31,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260935,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9696299999999,
+      "opponent_remaining_overage_s": 599.997751,
+      "engine_steps": 34,
+      "agent_decisions": 30,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.36794,
+      "runner_error": null
+    },
+    {
+      "game_index": 63,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00063",
+      "pair_id": 31,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260935,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9779990000001,
+      "opponent_remaining_overage_s": 599.995476,
+      "engine_steps": 28,
+      "agent_decisions": 22,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.285839,
+      "runner_error": null
+    },
+    {
+      "game_index": 64,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00064",
+      "pair_id": 32,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260936,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9568370000001,
+      "opponent_remaining_overage_s": 599.996218,
+      "engine_steps": 46,
+      "agent_decisions": 40,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.44778,
+      "runner_error": null
+    },
+    {
+      "game_index": 65,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00065",
+      "pair_id": 32,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260936,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9409609999999,
+      "opponent_remaining_overage_s": 599.9947219999999,
+      "engine_steps": 37,
+      "agent_decisions": 28,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.387845,
+      "runner_error": null
+    },
+    {
+      "game_index": 66,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00066",
+      "pair_id": 33,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260937,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8885210000005,
+      "opponent_remaining_overage_s": 599.9893720000001,
+      "engine_steps": 62,
+      "agent_decisions": 48,
+      "opponent_decisions": 14,
+      "wall_time_s": 0.742,
+      "runner_error": null
+    },
+    {
+      "game_index": 67,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00067",
+      "pair_id": 33,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260937,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9449890000001,
+      "opponent_remaining_overage_s": 599.9923040000001,
+      "engine_steps": 59,
+      "agent_decisions": 48,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.689042,
+      "runner_error": null
+    },
+    {
+      "game_index": 68,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00068",
+      "pair_id": 34,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260938,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.891724,
+      "opponent_remaining_overage_s": 599.9777889999999,
+      "engine_steps": 81,
+      "agent_decisions": 66,
+      "opponent_decisions": 15,
+      "wall_time_s": 1.03635,
+      "runner_error": null
+    },
+    {
+      "game_index": 69,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00069",
+      "pair_id": 34,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260938,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8858539999998,
+      "opponent_remaining_overage_s": 599.9924599999999,
+      "engine_steps": 52,
+      "agent_decisions": 43,
+      "opponent_decisions": 9,
+      "wall_time_s": 1.078615,
+      "runner_error": null
+    },
+    {
+      "game_index": 70,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00070",
+      "pair_id": 35,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260939,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9539990000004,
+      "opponent_remaining_overage_s": 599.994221,
+      "engine_steps": 50,
+      "agent_decisions": 42,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.562482,
+      "runner_error": null
+    },
+    {
+      "game_index": 71,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00071",
+      "pair_id": 35,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260939,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9123139999997,
+      "opponent_remaining_overage_s": 599.994958,
+      "engine_steps": 55,
+      "agent_decisions": 47,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.593588,
+      "runner_error": null
+    },
+    {
+      "game_index": 72,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00072",
+      "pair_id": 36,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260940,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9505189999999,
+      "opponent_remaining_overage_s": 599.9965269999999,
+      "engine_steps": 50,
+      "agent_decisions": 45,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.543654,
+      "runner_error": null
+    },
+    {
+      "game_index": 73,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00073",
+      "pair_id": 36,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260940,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9492060000005,
+      "opponent_remaining_overage_s": 599.9838800000002,
+      "engine_steps": 68,
+      "agent_decisions": 47,
+      "opponent_decisions": 21,
+      "wall_time_s": 0.67429,
+      "runner_error": null
+    },
+    {
+      "game_index": 74,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00074",
+      "pair_id": 37,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260941,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.938453,
+      "opponent_remaining_overage_s": 599.997899,
+      "engine_steps": 40,
+      "agent_decisions": 36,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.414094,
+      "runner_error": null
+    },
+    {
+      "game_index": 75,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00075",
+      "pair_id": 37,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260941,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9655150000001,
+      "opponent_remaining_overage_s": 599.996894,
+      "engine_steps": 41,
+      "agent_decisions": 35,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.395782,
+      "runner_error": null
+    },
+    {
+      "game_index": 76,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00076",
+      "pair_id": 38,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260942,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8768719999999,
+      "opponent_remaining_overage_s": 599.9830750000003,
+      "engine_steps": 94,
+      "agent_decisions": 73,
+      "opponent_decisions": 21,
+      "wall_time_s": 1.074286,
+      "runner_error": null
+    },
+    {
+      "game_index": 77,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00077",
+      "pair_id": 38,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260942,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9242950000001,
+      "opponent_remaining_overage_s": 599.986448,
+      "engine_steps": 82,
+      "agent_decisions": 61,
+      "opponent_decisions": 21,
+      "wall_time_s": 0.791263,
+      "runner_error": null
+    },
+    {
+      "game_index": 78,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00078",
+      "pair_id": 39,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260943,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.926526,
+      "opponent_remaining_overage_s": 599.9750769999999,
+      "engine_steps": 88,
+      "agent_decisions": 61,
+      "opponent_decisions": 27,
+      "wall_time_s": 0.96903,
+      "runner_error": null
+    },
+    {
+      "game_index": 79,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00079",
+      "pair_id": 39,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260943,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8857159999998,
+      "opponent_remaining_overage_s": 599.9850859999999,
+      "engine_steps": 88,
+      "agent_decisions": 67,
+      "opponent_decisions": 21,
+      "wall_time_s": 0.918052,
+      "runner_error": null
+    },
+    {
+      "game_index": 80,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00080",
+      "pair_id": 40,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260944,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9435040000001,
+      "opponent_remaining_overage_s": 599.9929609999998,
+      "engine_steps": 61,
+      "agent_decisions": 51,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.626139,
+      "runner_error": null
+    },
+    {
+      "game_index": 81,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00081",
+      "pair_id": 40,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260944,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.881879,
+      "opponent_remaining_overage_s": 599.993958,
+      "engine_steps": 60,
+      "agent_decisions": 51,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.663699,
+      "runner_error": null
+    },
+    {
+      "game_index": 82,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00082",
+      "pair_id": 41,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260945,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9676739999999,
+      "opponent_remaining_overage_s": 599.9965660000001,
+      "engine_steps": 38,
+      "agent_decisions": 32,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.380724,
+      "runner_error": null
+    },
+    {
+      "game_index": 83,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00083",
+      "pair_id": 41,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260945,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9565769999998,
+      "opponent_remaining_overage_s": 599.9882590000001,
+      "engine_steps": 55,
+      "agent_decisions": 40,
+      "opponent_decisions": 15,
+      "wall_time_s": 0.523313,
+      "runner_error": null
+    },
+    {
+      "game_index": 84,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00084",
+      "pair_id": 42,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260946,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9348600000001,
+      "opponent_remaining_overage_s": 599.997554,
+      "engine_steps": 35,
+      "agent_decisions": 30,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.391408,
+      "runner_error": null
+    },
+    {
+      "game_index": 85,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00085",
+      "pair_id": 42,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260946,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9564810000002,
+      "opponent_remaining_overage_s": 599.9917969999999,
+      "engine_steps": 47,
+      "agent_decisions": 35,
+      "opponent_decisions": 12,
+      "wall_time_s": 0.466205,
+      "runner_error": null
+    },
+    {
+      "game_index": 86,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00086",
+      "pair_id": 43,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260947,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9626970000003,
+      "opponent_remaining_overage_s": 599.9976410000002,
+      "engine_steps": 40,
+      "agent_decisions": 36,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.453559,
+      "runner_error": null
+    },
+    {
+      "game_index": 87,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00087",
+      "pair_id": 43,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260947,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9446389999999,
+      "opponent_remaining_overage_s": 599.9863929999999,
+      "engine_steps": 58,
+      "agent_decisions": 42,
+      "opponent_decisions": 16,
+      "wall_time_s": 0.601786,
+      "runner_error": null
+    },
+    {
+      "game_index": 88,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00088",
+      "pair_id": 44,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260948,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8135719999997,
+      "opponent_remaining_overage_s": 599.996298,
+      "engine_steps": 51,
+      "agent_decisions": 45,
+      "opponent_decisions": 6,
+      "wall_time_s": 1.370195,
+      "runner_error": null
+    },
+    {
+      "game_index": 89,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00089",
+      "pair_id": 44,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260948,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9432709999999,
+      "opponent_remaining_overage_s": 599.985855,
+      "engine_steps": 47,
+      "agent_decisions": 31,
+      "opponent_decisions": 16,
+      "wall_time_s": 0.932387,
+      "runner_error": null
+    },
+    {
+      "game_index": 90,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00090",
+      "pair_id": 45,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260949,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9724390000002,
+      "opponent_remaining_overage_s": 599.9955380000001,
+      "engine_steps": 36,
+      "agent_decisions": 29,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.381289,
+      "runner_error": null
+    },
+    {
+      "game_index": 91,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00091",
+      "pair_id": 45,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260949,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8859230000003,
+      "opponent_remaining_overage_s": 599.9930529999999,
+      "engine_steps": 72,
+      "agent_decisions": 61,
+      "opponent_decisions": 11,
+      "wall_time_s": 1.182727,
+      "runner_error": null
+    },
+    {
+      "game_index": 92,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00092",
+      "pair_id": 46,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260950,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9486789999999,
+      "opponent_remaining_overage_s": 599.993618,
+      "engine_steps": 52,
+      "agent_decisions": 44,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.878953,
+      "runner_error": null
+    },
+    {
+      "game_index": 93,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00093",
+      "pair_id": 46,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260950,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9239789999997,
+      "opponent_remaining_overage_s": 599.992852,
+      "engine_steps": 49,
+      "agent_decisions": 38,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.538933,
+      "runner_error": null
+    },
+    {
+      "game_index": 94,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00094",
+      "pair_id": 47,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260951,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9793210000003,
+      "opponent_remaining_overage_s": 599.9952499999999,
+      "engine_steps": 33,
+      "agent_decisions": 24,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.304507,
+      "runner_error": null
+    },
+    {
+      "game_index": 95,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00095",
+      "pair_id": 47,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260951,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8864269999999,
+      "opponent_remaining_overage_s": 599.9544609999999,
+      "engine_steps": 88,
+      "agent_decisions": 68,
+      "opponent_decisions": 20,
+      "wall_time_s": 0.985864,
+      "runner_error": null
+    },
+    {
+      "game_index": 96,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00096",
+      "pair_id": 48,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260952,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9291069999999,
+      "opponent_remaining_overage_s": 599.9934360000001,
+      "engine_steps": 74,
+      "agent_decisions": 64,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.757451,
+      "runner_error": null
+    },
+    {
+      "game_index": 97,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00097",
+      "pair_id": 48,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260952,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9157780000004,
+      "opponent_remaining_overage_s": 599.993332,
+      "engine_steps": 56,
+      "agent_decisions": 45,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.611007,
+      "runner_error": null
+    },
+    {
+      "game_index": 98,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00098",
+      "pair_id": 49,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260953,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.950004,
+      "opponent_remaining_overage_s": 599.998324,
+      "engine_steps": 24,
+      "agent_decisions": 21,
+      "opponent_decisions": 3,
+      "wall_time_s": 0.294196,
+      "runner_error": null
+    },
+    {
+      "game_index": 99,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00099",
+      "pair_id": 49,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260953,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.937596,
+      "opponent_remaining_overage_s": 599.9904979999997,
+      "engine_steps": 66,
+      "agent_decisions": 52,
+      "opponent_decisions": 14,
+      "wall_time_s": 0.672743,
+      "runner_error": null
+    },
+    {
+      "game_index": 100,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00100",
+      "pair_id": 50,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260954,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8835609999995,
+      "opponent_remaining_overage_s": 599.989042,
+      "engine_steps": 85,
+      "agent_decisions": 70,
+      "opponent_decisions": 15,
+      "wall_time_s": 0.856542,
+      "runner_error": null
+    },
+    {
+      "game_index": 101,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00101",
+      "pair_id": 50,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260954,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.986302,
+      "opponent_remaining_overage_s": 599.996846,
+      "engine_steps": 23,
+      "agent_decisions": 16,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.228206,
+      "runner_error": null
+    },
+    {
+      "game_index": 102,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00102",
+      "pair_id": 51,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260955,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.881297,
+      "opponent_remaining_overage_s": 599.989599,
+      "engine_steps": 85,
+      "agent_decisions": 71,
+      "opponent_decisions": 14,
+      "wall_time_s": 0.920025,
+      "runner_error": null
+    },
+    {
+      "game_index": 103,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00103",
+      "pair_id": 51,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260955,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9379299999999,
+      "opponent_remaining_overage_s": 599.992551,
+      "engine_steps": 68,
+      "agent_decisions": 58,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.717413,
+      "runner_error": null
+    },
+    {
+      "game_index": 104,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00104",
+      "pair_id": 52,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260956,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9191480000001,
+      "opponent_remaining_overage_s": 599.9948350000001,
+      "engine_steps": 50,
+      "agent_decisions": 42,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.579351,
+      "runner_error": null
+    },
+    {
+      "game_index": 105,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00105",
+      "pair_id": 52,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260956,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.939728,
+      "opponent_remaining_overage_s": 599.9962610000001,
+      "engine_steps": 54,
+      "agent_decisions": 50,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.76252,
+      "runner_error": null
+    },
+    {
+      "game_index": 106,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00106",
+      "pair_id": 53,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260957,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9083119999999,
+      "opponent_remaining_overage_s": 599.990985,
+      "engine_steps": 70,
+      "agent_decisions": 57,
+      "opponent_decisions": 13,
+      "wall_time_s": 0.70854,
+      "runner_error": null
+    },
+    {
+      "game_index": 107,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00107",
+      "pair_id": 53,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260957,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9557199999998,
+      "opponent_remaining_overage_s": 599.9961239999999,
+      "engine_steps": 49,
+      "agent_decisions": 42,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.543466,
+      "runner_error": null
+    },
+    {
+      "game_index": 108,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00108",
+      "pair_id": 54,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260958,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9658140000001,
+      "opponent_remaining_overage_s": 599.99499,
+      "engine_steps": 42,
+      "agent_decisions": 34,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.405893,
+      "runner_error": null
+    },
+    {
+      "game_index": 109,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00109",
+      "pair_id": 54,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260958,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9164760000001,
+      "opponent_remaining_overage_s": 599.9866410000002,
+      "engine_steps": 88,
+      "agent_decisions": 68,
+      "opponent_decisions": 20,
+      "wall_time_s": 0.894538,
+      "runner_error": null
+    },
+    {
+      "game_index": 110,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00110",
+      "pair_id": 55,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260959,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8861889999998,
+      "opponent_remaining_overage_s": 599.9538519999998,
+      "engine_steps": 93,
+      "agent_decisions": 73,
+      "opponent_decisions": 20,
+      "wall_time_s": 1.008786,
+      "runner_error": null
+    },
+    {
+      "game_index": 111,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00111",
+      "pair_id": 55,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260959,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9402460000002,
+      "opponent_remaining_overage_s": 599.9852960000001,
+      "engine_steps": 72,
+      "agent_decisions": 51,
+      "opponent_decisions": 21,
+      "wall_time_s": 0.703551,
+      "runner_error": null
+    },
+    {
+      "game_index": 112,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00112",
+      "pair_id": 56,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260960,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9073090000003,
+      "opponent_remaining_overage_s": 599.992763,
+      "engine_steps": 68,
+      "agent_decisions": 57,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.678995,
+      "runner_error": null
+    },
+    {
+      "game_index": 113,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00113",
+      "pair_id": 56,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260960,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8621149999999,
+      "opponent_remaining_overage_s": 599.9690429999999,
+      "engine_steps": 63,
+      "agent_decisions": 50,
+      "opponent_decisions": 13,
+      "wall_time_s": 1.359564,
+      "runner_error": null
+    },
+    {
+      "game_index": 114,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00114",
+      "pair_id": 57,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260961,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.939645,
+      "opponent_remaining_overage_s": 599.992503,
+      "engine_steps": 65,
+      "agent_decisions": 54,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.647936,
+      "runner_error": null
+    },
+    {
+      "game_index": 115,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00115",
+      "pair_id": 57,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260961,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.966419,
+      "opponent_remaining_overage_s": 599.9707699999999,
+      "engine_steps": 37,
+      "agent_decisions": 31,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.406976,
+      "runner_error": null
+    },
+    {
+      "game_index": 116,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00116",
+      "pair_id": 58,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260962,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9570519999997,
+      "opponent_remaining_overage_s": 599.9951359999999,
+      "engine_steps": 48,
+      "agent_decisions": 40,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.458373,
+      "runner_error": null
+    },
+    {
+      "game_index": 117,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00117",
+      "pair_id": 58,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260962,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9697849999998,
+      "opponent_remaining_overage_s": 599.9951130000001,
+      "engine_steps": 39,
+      "agent_decisions": 30,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.371524,
+      "runner_error": null
+    },
+    {
+      "game_index": 118,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00118",
+      "pair_id": 59,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260963,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.901423,
+      "opponent_remaining_overage_s": 599.9949769999998,
+      "engine_steps": 47,
+      "agent_decisions": 39,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.510294,
+      "runner_error": null
+    },
+    {
+      "game_index": 119,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00119",
+      "pair_id": 59,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260963,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9544520000003,
+      "opponent_remaining_overage_s": 599.9953509999999,
+      "engine_steps": 50,
+      "agent_decisions": 41,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.527454,
+      "runner_error": null
+    },
+    {
+      "game_index": 120,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00120",
+      "pair_id": 60,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260964,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9615349999999,
+      "opponent_remaining_overage_s": 599.994603,
+      "engine_steps": 46,
+      "agent_decisions": 38,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.444711,
+      "runner_error": null
+    },
+    {
+      "game_index": 121,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00121",
+      "pair_id": 60,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260964,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9433199999995,
+      "opponent_remaining_overage_s": 599.956899,
+      "engine_steps": 61,
+      "agent_decisions": 48,
+      "opponent_decisions": 13,
+      "wall_time_s": 0.624838,
+      "runner_error": null
+    },
+    {
+      "game_index": 122,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00122",
+      "pair_id": 61,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260965,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9406240000002,
+      "opponent_remaining_overage_s": 599.9920720000001,
+      "engine_steps": 65,
+      "agent_decisions": 57,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.673019,
+      "runner_error": null
+    },
+    {
+      "game_index": 123,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00123",
+      "pair_id": 61,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260965,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9673859999999,
+      "opponent_remaining_overage_s": 599.996977,
+      "engine_steps": 39,
+      "agent_decisions": 34,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.377963,
+      "runner_error": null
+    },
+    {
+      "game_index": 124,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00124",
+      "pair_id": 62,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260966,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9707519999998,
+      "opponent_remaining_overage_s": 599.995111,
+      "engine_steps": 37,
+      "agent_decisions": 28,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.348229,
+      "runner_error": null
+    },
+    {
+      "game_index": 125,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00125",
+      "pair_id": 62,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260966,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.889482,
+      "opponent_remaining_overage_s": 599.9865090000001,
+      "engine_steps": 78,
+      "agent_decisions": 61,
+      "opponent_decisions": 17,
+      "wall_time_s": 1.531172,
+      "runner_error": null
+    },
+    {
+      "game_index": 126,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00126",
+      "pair_id": 63,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260967,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.969176,
+      "opponent_remaining_overage_s": 599.99809,
+      "engine_steps": 34,
+      "agent_decisions": 30,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.332406,
+      "runner_error": null
+    },
+    {
+      "game_index": 127,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00127",
+      "pair_id": 63,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260967,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8707809999997,
+      "opponent_remaining_overage_s": 599.9861809999996,
+      "engine_steps": 82,
+      "agent_decisions": 64,
+      "opponent_decisions": 18,
+      "wall_time_s": 0.914546,
+      "runner_error": null
+    },
+    {
+      "game_index": 128,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00128",
+      "pair_id": 64,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260968,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8280859999998,
+      "opponent_remaining_overage_s": 599.983919,
+      "engine_steps": 104,
+      "agent_decisions": 85,
+      "opponent_decisions": 19,
+      "wall_time_s": 1.165769,
+      "runner_error": null
+    },
+    {
+      "game_index": 129,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00129",
+      "pair_id": 64,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260968,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9646310000002,
+      "opponent_remaining_overage_s": 599.99627,
+      "engine_steps": 41,
+      "agent_decisions": 34,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.401347,
+      "runner_error": null
+    },
+    {
+      "game_index": 130,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00130",
+      "pair_id": 65,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260969,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9680300000002,
+      "opponent_remaining_overage_s": 599.9979040000001,
+      "engine_steps": 36,
+      "agent_decisions": 32,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.350256,
+      "runner_error": null
+    },
+    {
+      "game_index": 131,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00131",
+      "pair_id": 65,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260969,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9489319999999,
+      "opponent_remaining_overage_s": 599.9983720000001,
+      "engine_steps": 22,
+      "agent_decisions": 18,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.263117,
+      "runner_error": null
+    },
+    {
+      "game_index": 132,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00132",
+      "pair_id": 66,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260970,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.914234,
+      "opponent_remaining_overage_s": 599.9716800000001,
+      "engine_steps": 115,
+      "agent_decisions": 78,
+      "opponent_decisions": 37,
+      "wall_time_s": 1.170339,
+      "runner_error": null
+    },
+    {
+      "game_index": 133,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00133",
+      "pair_id": 66,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260970,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9277699999999,
+      "opponent_remaining_overage_s": 599.9955219999999,
+      "engine_steps": 38,
+      "agent_decisions": 30,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.402604,
+      "runner_error": null
+    },
+    {
+      "game_index": 134,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00134",
+      "pair_id": 67,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260971,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9789080000003,
+      "opponent_remaining_overage_s": 599.9981889999999,
+      "engine_steps": 29,
+      "agent_decisions": 25,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.268712,
+      "runner_error": null
+    },
+    {
+      "game_index": 135,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00135",
+      "pair_id": 67,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260971,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9648,
+      "opponent_remaining_overage_s": 599.996524,
+      "engine_steps": 41,
+      "agent_decisions": 34,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.391092,
+      "runner_error": null
+    },
+    {
+      "game_index": 136,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00136",
+      "pair_id": 68,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260972,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9325879999999,
+      "opponent_remaining_overage_s": 599.9468420000002,
+      "engine_steps": 89,
+      "agent_decisions": 60,
+      "opponent_decisions": 29,
+      "wall_time_s": 0.908115,
+      "runner_error": null
+    },
+    {
+      "game_index": 137,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00137",
+      "pair_id": 68,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260972,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9612740000001,
+      "opponent_remaining_overage_s": 599.996242,
+      "engine_steps": 42,
+      "agent_decisions": 36,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.417787,
+      "runner_error": null
+    },
+    {
+      "game_index": 138,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00138",
+      "pair_id": 69,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260973,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.971677,
+      "opponent_remaining_overage_s": 599.9965390000001,
+      "engine_steps": 35,
+      "agent_decisions": 29,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.372767,
+      "runner_error": null
+    },
+    {
+      "game_index": 139,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00139",
+      "pair_id": 69,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260973,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.955817,
+      "opponent_remaining_overage_s": 599.9786180000001,
+      "engine_steps": 48,
+      "agent_decisions": 42,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.505207,
+      "runner_error": null
+    },
+    {
+      "game_index": 140,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00140",
+      "pair_id": 70,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260974,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9658749999999,
+      "opponent_remaining_overage_s": 599.994121,
+      "engine_steps": 44,
+      "agent_decisions": 34,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.419348,
+      "runner_error": null
+    },
+    {
+      "game_index": 141,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00141",
+      "pair_id": 70,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260974,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9616510000002,
+      "opponent_remaining_overage_s": 599.9964709999999,
+      "engine_steps": 43,
+      "agent_decisions": 36,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.403697,
+      "runner_error": null
+    },
+    {
+      "game_index": 142,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00142",
+      "pair_id": 71,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260975,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9019400000005,
+      "opponent_remaining_overage_s": 599.9472440000001,
+      "engine_steps": 105,
+      "agent_decisions": 80,
+      "opponent_decisions": 25,
+      "wall_time_s": 1.196794,
+      "runner_error": null
+    },
+    {
+      "game_index": 143,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00143",
+      "pair_id": 71,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260975,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9195500000003,
+      "opponent_remaining_overage_s": 599.9847360000002,
+      "engine_steps": 58,
+      "agent_decisions": 40,
+      "opponent_decisions": 18,
+      "wall_time_s": 0.643145,
+      "runner_error": null
+    },
+    {
+      "game_index": 144,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00144",
+      "pair_id": 72,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260976,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9291010000001,
+      "opponent_remaining_overage_s": 599.9947480000001,
+      "engine_steps": 64,
+      "agent_decisions": 55,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.62424,
+      "runner_error": null
+    },
+    {
+      "game_index": 145,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00145",
+      "pair_id": 72,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260976,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8833039999997,
+      "opponent_remaining_overage_s": 599.9370410000002,
+      "engine_steps": 110,
+      "agent_decisions": 74,
+      "opponent_decisions": 36,
+      "wall_time_s": 1.182865,
+      "runner_error": null
+    },
+    {
+      "game_index": 146,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00146",
+      "pair_id": 73,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260977,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9644769999999,
+      "opponent_remaining_overage_s": 599.998083,
+      "engine_steps": 40,
+      "agent_decisions": 37,
+      "opponent_decisions": 3,
+      "wall_time_s": 0.445474,
+      "runner_error": null
+    },
+    {
+      "game_index": 147,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00147",
+      "pair_id": 73,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260977,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8905699999998,
+      "opponent_remaining_overage_s": 599.959284,
+      "engine_steps": 118,
+      "agent_decisions": 67,
+      "opponent_decisions": 51,
+      "wall_time_s": 1.252591,
+      "runner_error": null
+    },
+    {
+      "game_index": 148,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00148",
+      "pair_id": 74,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260978,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9079620000001,
+      "opponent_remaining_overage_s": 599.995481,
+      "engine_steps": 65,
+      "agent_decisions": 58,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.668593,
+      "runner_error": null
+    },
+    {
+      "game_index": 149,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00149",
+      "pair_id": 74,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260978,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.962846,
+      "opponent_remaining_overage_s": 599.9960690000001,
+      "engine_steps": 40,
+      "agent_decisions": 33,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.417819,
+      "runner_error": null
+    },
+    {
+      "game_index": 150,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00150",
+      "pair_id": 75,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260979,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9628910000002,
+      "opponent_remaining_overage_s": 599.997514,
+      "engine_steps": 38,
+      "agent_decisions": 34,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.416865,
+      "runner_error": null
+    },
+    {
+      "game_index": 151,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00151",
+      "pair_id": 75,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260979,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9715320000004,
+      "opponent_remaining_overage_s": 599.966831,
+      "engine_steps": 36,
+      "agent_decisions": 29,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.365518,
+      "runner_error": null
+    },
+    {
+      "game_index": 152,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00152",
+      "pair_id": 76,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260980,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9593719999997,
+      "opponent_remaining_overage_s": 599.996206,
+      "engine_steps": 47,
+      "agent_decisions": 40,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.458866,
+      "runner_error": null
+    },
+    {
+      "game_index": 153,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00153",
+      "pair_id": 76,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260980,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9756820000001,
+      "opponent_remaining_overage_s": 599.998252,
+      "engine_steps": 29,
+      "agent_decisions": 25,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.29586,
+      "runner_error": null
+    },
+    {
+      "game_index": 154,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00154",
+      "pair_id": 77,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260981,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9370910000002,
+      "opponent_remaining_overage_s": 599.995801,
+      "engine_steps": 41,
+      "agent_decisions": 35,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.4382,
+      "runner_error": null
+    },
+    {
+      "game_index": 155,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00155",
+      "pair_id": 77,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260981,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9010889999998,
+      "opponent_remaining_overage_s": 599.9809510000001,
+      "engine_steps": 80,
+      "agent_decisions": 53,
+      "opponent_decisions": 27,
+      "wall_time_s": 0.813836,
+      "runner_error": null
+    },
+    {
+      "game_index": 156,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00156",
+      "pair_id": 78,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260982,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.969737,
+      "opponent_remaining_overage_s": 599.996264,
+      "engine_steps": 37,
+      "agent_decisions": 30,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.361952,
+      "runner_error": null
+    },
+    {
+      "game_index": 157,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00157",
+      "pair_id": 78,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260982,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9090840000001,
+      "opponent_remaining_overage_s": 599.9779770000001,
+      "engine_steps": 89,
+      "agent_decisions": 74,
+      "opponent_decisions": 15,
+      "wall_time_s": 0.925202,
+      "runner_error": null
+    },
+    {
+      "game_index": 158,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00158",
+      "pair_id": 79,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260983,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9008130000001,
+      "opponent_remaining_overage_s": 599.9530999999998,
+      "engine_steps": 69,
+      "agent_decisions": 55,
+      "opponent_decisions": 14,
+      "wall_time_s": 0.76594,
+      "runner_error": null
+    },
+    {
+      "game_index": 159,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00159",
+      "pair_id": 79,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260983,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9040830000002,
+      "opponent_remaining_overage_s": 599.926554,
+      "engine_steps": 120,
+      "agent_decisions": 74,
+      "opponent_decisions": 46,
+      "wall_time_s": 1.306106,
+      "runner_error": null
+    },
+    {
+      "game_index": 160,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00160",
+      "pair_id": 80,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260984,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.7985579999998,
+      "opponent_remaining_overage_s": 599.9562480000002,
+      "engine_steps": 90,
+      "agent_decisions": 77,
+      "opponent_decisions": 13,
+      "wall_time_s": 2.077953,
+      "runner_error": null
+    },
+    {
+      "game_index": 161,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00161",
+      "pair_id": 80,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260984,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.879754,
+      "opponent_remaining_overage_s": 599.9869240000002,
+      "engine_steps": 85,
+      "agent_decisions": 66,
+      "opponent_decisions": 19,
+      "wall_time_s": 0.898481,
+      "runner_error": null
+    },
+    {
+      "game_index": 162,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00162",
+      "pair_id": 81,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260985,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9372260000004,
+      "opponent_remaining_overage_s": 599.993883,
+      "engine_steps": 65,
+      "agent_decisions": 56,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.659235,
+      "runner_error": null
+    },
+    {
+      "game_index": 163,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00163",
+      "pair_id": 81,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260985,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9139350000002,
+      "opponent_remaining_overage_s": 599.995313,
+      "engine_steps": 54,
+      "agent_decisions": 45,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.582905,
+      "runner_error": null
+    },
+    {
+      "game_index": 164,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00164",
+      "pair_id": 82,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260986,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9399189999999,
+      "opponent_remaining_overage_s": 599.9932680000001,
+      "engine_steps": 64,
+      "agent_decisions": 54,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.608554,
+      "runner_error": null
+    },
+    {
+      "game_index": 165,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00165",
+      "pair_id": 82,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260986,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.979852,
+      "opponent_remaining_overage_s": 599.997413,
+      "engine_steps": 28,
+      "agent_decisions": 23,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.278777,
+      "runner_error": null
+    },
+    {
+      "game_index": 166,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00166",
+      "pair_id": 83,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260987,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9430769999998,
+      "opponent_remaining_overage_s": 599.998211,
+      "engine_steps": 39,
+      "agent_decisions": 36,
+      "opponent_decisions": 3,
+      "wall_time_s": 0.481121,
+      "runner_error": null
+    },
+    {
+      "game_index": 167,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00167",
+      "pair_id": 83,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260987,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9417179999996,
+      "opponent_remaining_overage_s": 599.9928780000001,
+      "engine_steps": 65,
+      "agent_decisions": 53,
+      "opponent_decisions": 12,
+      "wall_time_s": 0.629157,
+      "runner_error": null
+    },
+    {
+      "game_index": 168,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00168",
+      "pair_id": 84,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260988,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9361870000001,
+      "opponent_remaining_overage_s": 599.9970609999999,
+      "engine_steps": 40,
+      "agent_decisions": 36,
+      "opponent_decisions": 4,
+      "wall_time_s": 0.475047,
+      "runner_error": null
+    },
+    {
+      "game_index": 169,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00169",
+      "pair_id": 84,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260988,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9580419999998,
+      "opponent_remaining_overage_s": 599.9941549999999,
+      "engine_steps": 45,
+      "agent_decisions": 35,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.437481,
+      "runner_error": null
+    },
+    {
+      "game_index": 170,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00170",
+      "pair_id": 85,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260989,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9594020000001,
+      "opponent_remaining_overage_s": 599.993335,
+      "engine_steps": 48,
+      "agent_decisions": 37,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.453891,
+      "runner_error": null
+    },
+    {
+      "game_index": 171,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00171",
+      "pair_id": 85,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260989,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9303789999999,
+      "opponent_remaining_overage_s": 599.955288,
+      "engine_steps": 75,
+      "agent_decisions": 59,
+      "opponent_decisions": 16,
+      "wall_time_s": 0.831794,
+      "runner_error": null
+    },
+    {
+      "game_index": 172,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00172",
+      "pair_id": 86,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260990,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9589739999998,
+      "opponent_remaining_overage_s": 599.9970710000001,
+      "engine_steps": 45,
+      "agent_decisions": 40,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.459438,
+      "runner_error": null
+    },
+    {
+      "game_index": 173,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00173",
+      "pair_id": 86,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260990,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.892911,
+      "opponent_remaining_overage_s": 599.9904060000001,
+      "engine_steps": 66,
+      "agent_decisions": 53,
+      "opponent_decisions": 13,
+      "wall_time_s": 0.746751,
+      "runner_error": null
+    },
+    {
+      "game_index": 174,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00174",
+      "pair_id": 87,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260991,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9773529999998,
+      "opponent_remaining_overage_s": 599.995508,
+      "engine_steps": 31,
+      "agent_decisions": 25,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.371169,
+      "runner_error": null
+    },
+    {
+      "game_index": 175,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00175",
+      "pair_id": 87,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260991,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.890752,
+      "opponent_remaining_overage_s": 599.9797889999999,
+      "engine_steps": 87,
+      "agent_decisions": 61,
+      "opponent_decisions": 26,
+      "wall_time_s": 0.947265,
+      "runner_error": null
+    },
+    {
+      "game_index": 176,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00176",
+      "pair_id": 88,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260992,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.921669,
+      "opponent_remaining_overage_s": 599.9931609999999,
+      "engine_steps": 76,
+      "agent_decisions": 66,
+      "opponent_decisions": 10,
+      "wall_time_s": 0.808316,
+      "runner_error": null
+    },
+    {
+      "game_index": 177,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00177",
+      "pair_id": 88,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260992,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8799890000003,
+      "opponent_remaining_overage_s": 599.980734,
+      "engine_steps": 103,
+      "agent_decisions": 77,
+      "opponent_decisions": 26,
+      "wall_time_s": 1.048697,
+      "runner_error": null
+    },
+    {
+      "game_index": 178,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00178",
+      "pair_id": 89,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260993,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8799239999998,
+      "opponent_remaining_overage_s": 599.997956,
+      "engine_steps": 41,
+      "agent_decisions": 38,
+      "opponent_decisions": 3,
+      "wall_time_s": 1.483878,
+      "runner_error": null
+    },
+    {
+      "game_index": 179,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00179",
+      "pair_id": 89,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260993,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9703619999998,
+      "opponent_remaining_overage_s": 599.9968989999999,
+      "engine_steps": 32,
+      "agent_decisions": 26,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.33887,
+      "runner_error": null
+    },
+    {
+      "game_index": 180,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00180",
+      "pair_id": 90,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260994,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9222970000001,
+      "opponent_remaining_overage_s": 599.996211,
+      "engine_steps": 58,
+      "agent_decisions": 52,
+      "opponent_decisions": 6,
+      "wall_time_s": 0.608293,
+      "runner_error": null
+    },
+    {
+      "game_index": 181,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00181",
+      "pair_id": 90,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260994,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8899759999998,
+      "opponent_remaining_overage_s": 599.9779750000001,
+      "engine_steps": 111,
+      "agent_decisions": 83,
+      "opponent_decisions": 28,
+      "wall_time_s": 1.187207,
+      "runner_error": null
+    },
+    {
+      "game_index": 182,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00182",
+      "pair_id": 91,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260995,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.966133,
+      "opponent_remaining_overage_s": 599.995143,
+      "engine_steps": 41,
+      "agent_decisions": 33,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.420685,
+      "runner_error": null
+    },
+    {
+      "game_index": 183,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00183",
+      "pair_id": 91,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260995,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.937452,
+      "opponent_remaining_overage_s": 599.988768,
+      "engine_steps": 69,
+      "agent_decisions": 53,
+      "opponent_decisions": 16,
+      "wall_time_s": 0.672618,
+      "runner_error": null
+    },
+    {
+      "game_index": 184,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00184",
+      "pair_id": 92,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260996,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9204879999998,
+      "opponent_remaining_overage_s": 599.9877859999999,
+      "engine_steps": 86,
+      "agent_decisions": 71,
+      "opponent_decisions": 15,
+      "wall_time_s": 0.863633,
+      "runner_error": null
+    },
+    {
+      "game_index": 185,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00185",
+      "pair_id": 92,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260996,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8762009999997,
+      "opponent_remaining_overage_s": 599.9890180000002,
+      "engine_steps": 90,
+      "agent_decisions": 74,
+      "opponent_decisions": 16,
+      "wall_time_s": 0.949211,
+      "runner_error": null
+    },
+    {
+      "game_index": 186,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00186",
+      "pair_id": 93,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260997,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9630940000002,
+      "opponent_remaining_overage_s": 599.9954010000001,
+      "engine_steps": 45,
+      "agent_decisions": 37,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.42361,
+      "runner_error": null
+    },
+    {
+      "game_index": 187,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00187",
+      "pair_id": 93,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260997,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9668460000001,
+      "opponent_remaining_overage_s": 599.9971280000001,
+      "engine_steps": 38,
+      "agent_decisions": 33,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.384123,
+      "runner_error": null
+    },
+    {
+      "game_index": 188,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00188",
+      "pair_id": 94,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260998,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9598459999999,
+      "opponent_remaining_overage_s": 599.9700619999999,
+      "engine_steps": 43,
+      "agent_decisions": 38,
+      "opponent_decisions": 5,
+      "wall_time_s": 0.441806,
+      "runner_error": null
+    },
+    {
+      "game_index": 189,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00189",
+      "pair_id": 94,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260998,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8929589999997,
+      "opponent_remaining_overage_s": 599.989317,
+      "engine_steps": 84,
+      "agent_decisions": 67,
+      "opponent_decisions": 17,
+      "wall_time_s": 0.842711,
+      "runner_error": null
+    },
+    {
+      "game_index": 190,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00190",
+      "pair_id": 95,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20260999,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.926992,
+      "opponent_remaining_overage_s": 599.9903220000001,
+      "engine_steps": 81,
+      "agent_decisions": 66,
+      "opponent_decisions": 15,
+      "wall_time_s": 0.783934,
+      "runner_error": null
+    },
+    {
+      "game_index": 191,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00191",
+      "pair_id": 95,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20260999,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.968368,
+      "opponent_remaining_overage_s": 599.9952500000002,
+      "engine_steps": 39,
+      "agent_decisions": 31,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.387143,
+      "runner_error": null
+    },
+    {
+      "game_index": 192,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00192",
+      "pair_id": 96,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20261000,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8747890000001,
+      "opponent_remaining_overage_s": 599.9928130000001,
+      "engine_steps": 74,
+      "agent_decisions": 63,
+      "opponent_decisions": 11,
+      "wall_time_s": 0.787355,
+      "runner_error": null
+    },
+    {
+      "game_index": 193,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00193",
+      "pair_id": 96,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20261000,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9536489999999,
+      "opponent_remaining_overage_s": 599.9951419999999,
+      "engine_steps": 48,
+      "agent_decisions": 39,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.460122,
+      "runner_error": null
+    },
+    {
+      "game_index": 194,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00194",
+      "pair_id": 97,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20261001,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9190330000002,
+      "opponent_remaining_overage_s": 599.9804130000001,
+      "engine_steps": 82,
+      "agent_decisions": 69,
+      "opponent_decisions": 13,
+      "wall_time_s": 0.830402,
+      "runner_error": null
+    },
+    {
+      "game_index": 195,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00195",
+      "pair_id": 97,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20261001,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.904725,
+      "opponent_remaining_overage_s": 599.991404,
+      "engine_steps": 63,
+      "agent_decisions": 49,
+      "opponent_decisions": 14,
+      "wall_time_s": 0.667598,
+      "runner_error": null
+    },
+    {
+      "game_index": 196,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00196",
+      "pair_id": 98,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20261002,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9392580000003,
+      "opponent_remaining_overage_s": 599.99461,
+      "engine_steps": 39,
+      "agent_decisions": 32,
+      "opponent_decisions": 7,
+      "wall_time_s": 0.409541,
+      "runner_error": null
+    },
+    {
+      "game_index": 197,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00197",
+      "pair_id": 98,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20261002,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.945329,
+      "opponent_remaining_overage_s": 599.9942139999999,
+      "engine_steps": 59,
+      "agent_decisions": 50,
+      "opponent_decisions": 9,
+      "wall_time_s": 0.57892,
+      "runner_error": null
+    },
+    {
+      "game_index": 198,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00198",
+      "pair_id": 99,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 20261003,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.8727369999996,
+      "opponent_remaining_overage_s": 599.9583090000001,
+      "engine_steps": 145,
+      "agent_decisions": 95,
+      "opponent_decisions": 50,
+      "wall_time_s": 1.580315,
+      "runner_error": null
+    },
+    {
+      "game_index": 199,
+      "game_id": "exp_20260904_162358_604611_planned-random-200_g00199",
+      "pair_id": 99,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 20261003,
+      "engine_seed": null,
+      "outcome": "win",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.976179,
+      "opponent_remaining_overage_s": 599.995785,
+      "engine_steps": 33,
+      "agent_decisions": 25,
+      "opponent_decisions": 8,
+      "wall_time_s": 0.318182,
+      "runner_error": null
+    }
+  ]
+}

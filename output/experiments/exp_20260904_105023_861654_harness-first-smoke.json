@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exp_20260904_105023_861654_harness-first-smoke",
+  "started_at": "2026-09-04T10:50:23.923776+00:00",
+  "finished_at": "2026-09-04T10:50:24.779083+00:00",
+  "wall_time_s": 0.855135,
+  "engine": {
+    "name": "cabt",
+    "kaggle_environments": "1.32.7",
+    "seed_control": false
+  },
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14"
+  },
+  "git_hash": "5f463b8d2f38162d63d46bb97df6bece2348ca47",
+  "git_dirty": true,
+  "agent": {
+    "name": "submission",
+    "source": "C:\\Users\\Vignesh\\Downloads\\pokemon\\submission\\main.py",
+    "deck": {
+      "name": "buddy-lucario-locked",
+      "cards": 60,
+      "sha256": "23ebf274a3d25d4dbc1ee3886e4c0e87a66c4e780c6e499e61be1b3ccd1f7c9d"
+    }
+  },
+  "opponent": {
+    "name": "first",
+    "source": "kaggle_environments.envs.cabt.cabt.first_agent",
+    "deck": {
+      "name": "cabt-builtin-deck",
+      "cards": 60,
+      "sha256": "dc24c4da860228fe938eaa078983353ce69476a2270d60a412645cc50eb7ae05"
+    }
+  },
+  "deck_name": "buddy-lucario-locked",
+  "opponent_name": "first",
+  "games": 2,
+  "seed_policy": "seat-paired",
+  "pairing": {
+    "mode": "seat-paired",
+    "full_pairs": 1,
+    "unpaired_games": 0,
+    "engine_seed_control": false,
+    "engine_seed": null,
+    "python_seed_base": 0,
+    "note": "Seats are swapped within each pair and Python agent RNG is reset; native cabt chance is uncontrolled and is not paired."
+  },
+  "results": {
+    "attempted": 2,
+    "completed": 2,
+    "wins": 0,
+    "losses": 2,
+    "draws": 0,
+    "win_rate": 0.0,
+    "win_rate_wilson95": [
+      0.0,
+      0.65762
+    ],
+    "invalid": 0,
+    "timeout": 0,
+    "error": 0,
+    "runner_error": 0,
+    "mean_leftover_overage_s": 599.955489,
+    "min_leftover_overage_s": 599.939191
+  },
+  "by_agent_seat": {
+    "0": {
+      "attempted": 1,
+      "completed": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson95": [
+        0.0,
+        0.793451
+      ],
+      "invalid": 0,
+      "timeout": 0,
+      "error": 0,
+      "runner_error": 0,
+      "mean_leftover_overage_s": 599.939191,
+      "min_leftover_overage_s": 599.939191
+    },
+    "1": {
+      "attempted": 1,
+      "completed": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "win_rate": 0.0,
+      "win_rate_wilson95": [
+        0.0,
+        0.793451
+      ],
+      "invalid": 0,
+      "timeout": 0,
+      "error": 0,
+      "runner_error": 0,
+      "mean_leftover_overage_s": 599.971787,
+      "min_leftover_overage_s": 599.971787
+    }
+  },
+  "opponent_failures": {
+    "invalid": 0,
+    "timeout": 0,
+    "error": 0
+  },
+  "agent_timing": {
+    "decisions": 116,
+    "mean_ms": 0.518034,
+    "p95_ms": 0.8045,
+    "max_ms": 1.0018,
+    "contract_failures": 0,
+    "exceptions": 0
+  },
+  "opponent_timing": {
+    "decisions": 138,
+    "mean_ms": 0.001906,
+    "p95_ms": 0.002915,
+    "max_ms": 0.0048,
+    "contract_failures": 0,
+    "exceptions": 0
+  },
+  "mean_engine_steps": 127.0,
+  "replay_jsonl": "C:\\Users\\Vignesh\\Downloads\\pokemon\\output\\replays\\exp_20260904_105023_861654_harness-first-smoke.jsonl",
+  "game_records": [
+    {
+      "game_index": 0,
+      "game_id": "exp_20260904_105023_861654_harness-first-smoke_g00000",
+      "pair_id": 0,
+      "pair_member": "A",
+      "agent_seat": 0,
+      "python_seed": 0,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        -1,
+        1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9391909999998,
+      "opponent_remaining_overage_s": 599.976588,
+      "engine_steps": 176,
+      "agent_decisions": 77,
+      "opponent_decisions": 99,
+      "wall_time_s": 0.611608,
+      "runner_error": null
+    },
+    {
+      "game_index": 1,
+      "game_id": "exp_20260904_105023_861654_harness-first-smoke_g00001",
+      "pair_id": 0,
+      "pair_member": "B",
+      "agent_seat": 1,
+      "python_seed": 0,
+      "engine_seed": null,
+      "outcome": "loss",
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        1,
+        -1
+      ],
+      "agent_status": "DONE",
+      "opponent_status": "DONE",
+      "agent_remaining_overage_s": 599.9717869999997,
+      "opponent_remaining_overage_s": 599.9913610000001,
+      "engine_steps": 78,
+      "agent_decisions": 39,
+      "opponent_decisions": 39,
+      "wall_time_s": 0.242646,
+      "runner_error": null
+    }
+  ]
+}

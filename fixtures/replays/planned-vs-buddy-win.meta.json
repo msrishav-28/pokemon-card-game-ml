@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_replay": "exp_20260904_162218_144905_planned-buddy-200.jsonl",
+  "source_replay_sha256": "d0dd652b62aabf184a3c7397fd474606e6c92dfd58d7272f11b01047905a95f9",
+  "game_id": "exp_20260904_162218_144905_planned-buddy-200_g00162",
+  "output": "planned-vs-buddy-win.jsonl",
+  "output_sha256": "e713b61c9731e1f10fde051cfb127deb29f667ae7f1cdbdcb8861e6e3539a52a",
+  "records": 147,
+  "kinds": {
+    "decision": 146,
+    "game_end": 1
+  },
+  "bytes": 1129085,
+  "payloads_copied_verbatim": true
+}
