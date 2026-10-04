@@ -17,8 +17,8 @@ actions, timeouts, errors, contract failures, or policy fallbacks.
 | `first` | 200 | 165-0-35 | 82.5% | 76.6-87.1% | 0 | 0 |
 | buddy-lucario | 200 | 98-0-102 | 49.0% | 42.2-55.9% | 0 | 0 |
 
-See `docs/notes/freeze.md` for provenance, hashes, limitations, and exact
-reproduction commands.
+See the [freeze record](docs/notes/freeze.md) for provenance, hashes,
+limitations, and exact reproduction commands.
 
 ## Reproduce locally
 
@@ -107,13 +107,27 @@ tests/               contract, adapter, policy, evaluator, packaging tests
 No competition upload command is provided: Simulation submissions are closed,
 and the project is evaluated locally.
 
-## Evidence and design notes
+## Documentation index
 
-- `docs/notes/freeze.md`: release identity, result-grade measurements, hashes,
-  verification, and known limits.
-- `docs/notes/probe.md`: official engine and buddy import probe.
-- `docs/notes/eval_protocol.md`: seats, randomness, outcomes, and replay schema.
-- `docs/notes/bets.md`: pre-registered changes and their measured decisions.
-- `docs/notes/doctrine_diff.md`: evidence for replacing the linear scorer.
-- `docs/notes/failure_taxonomy.md`: replay-derived signals and evidence limits.
-- `fixtures/replays/README.md`: retained byte-for-byte live game fixtures.
+All project documentation is linked here for direct navigation from GitHub.
+
+| Document | Purpose |
+|---|---|
+| [Freeze record](docs/notes/freeze.md) | Release identity, result-grade measurements, hashes, verification, and known limits |
+| [Build Bible](docs/canon/PTCG_AI_BUILD_BIBLE.md) | Original engineering laws, stages, and evaluation gates |
+| [Field Addendum](docs/canon/PTCG_AI_FIELD_ADDENDUM.md) | Live cabt contract, worker constraints, and ground-truth corrections |
+| [Probe report](docs/notes/probe.md) | Official engine, exact entry point, and buddy-loader probe evidence |
+| [Interface audit](docs/notes/interface_audit.md) | Live observation schema and action-contract findings |
+| [Evaluation protocol](docs/notes/eval_protocol.md) | Seat balance, randomness limits, outcome rules, and replay schema |
+| [Policy audit](docs/notes/policy_audit.md) | Official area semantics and measured policy defects |
+| [Decision bets](docs/notes/bets.md) | Pre-registered changes, acceptance gates, and results |
+| [Doctrine difference](docs/notes/doctrine_diff.md) | Evidence for replacing the linear scorer with AttackPlan |
+| [Failure taxonomy](docs/notes/failure_taxonomy.md) | Replay-derived signals and causal-evidence limits |
+| [Deck lock](docs/notes/deck_lock.md) | Locked Lucario list, roles, and deck-selection rationale |
+| [Unknowns and observation inventory](docs/notes/unknowns.md) | Mapped fields, unmapped fields, and freeze-time unknowns |
+| [Workspace inventory](docs/notes/inventory.md) | Canon, attachments, references, and official-data inventory |
+| [Session log](docs/notes/session_log.md) | Chronological build and measurement record |
+| [Retained replay guide](fixtures/replays/README.md) | Byte-for-byte live fixtures and recreation instructions |
+| [Official card-data note](data/official/README.md) | Runtime CSV source and local-only PDF hashes |
+| [Implementation plan](implementation_plan.md) | Historical staged implementation plan |
+| [Task specification](task.md) | Original repository task and success criteria |
